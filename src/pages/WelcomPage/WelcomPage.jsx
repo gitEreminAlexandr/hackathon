@@ -1,14 +1,25 @@
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Col, Row, Typography, Button, Popover, Steps } from 'antd';
+
+import { ModalLogin } from '../../containers';
 
 import classes from './WelcomPage.module.css';
 import image1 from './img/image1.png';
 import image2 from './img/image2.png';
 import image3 from './img/image3.jpg';
+import { SET_TYPE_MODAL } from '../../redux/typeModal';
+import { LOGIN } from '../../constant';
 
 export const WelcomPage = () => {
+	const dispatch = useDispatch();
 	const { Title } = Typography;
 	const [page, setPage] = useState(0);
+	const activeModal = useSelector((state) => state.typeModal.openModal);
+
+	const handelOpenModalLogin = () => {
+		dispatch(SET_TYPE_MODAL(LOGIN));
+	};
 
 	const customDot = (dot, { status, index }) => (
 		<Popover
@@ -101,11 +112,16 @@ export const WelcomPage = () => {
 					/>
 				</Col>
 				<Col>
-					<Button className={classes.button} type="link">
+					<Button
+						className={classes.button}
+						onClick={handelOpenModalLogin}
+						type="link"
+					>
 						Пропустить
 					</Button>
 				</Col>
 			</Row>
+			{activeModal && <ModalLogin />}
 		</>
 	);
 };

@@ -1,0 +1,75 @@
+.modal {
+    display: grid;
+    gap: 16px;
+}
+
+.conteiner_title {
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: #4A9AFF !important;
+}
+
+.text::after, .text::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 0px;
+    border: 1px solid silver;
+}
+
+.text::after {
+    right: 100px;
+    top: 11px;
+}
+
+.text::before {
+    left: 101px;
+    top: 11px
+}
+
+
+.conteiner_login {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+.conteiner_input {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+}
+.input {
+    height: 48px;
+    width: 400px;
+}
+
+.button {
+    height: 48px;
+    width: 400px !important;
+}
+
+.footer {
+    padding-top: 25px;
+    display: grid;
+    justify-content: space-around;
+}
+
+.passwords {
+    display: flex;
+    gap: 40px;
+}
+
+.password {
+    height: 48px;
+    width: 210;
+}
+
+.conteiner_checkbox {
+    padding-left: 35px;
+    padding-right: 100px;
+}

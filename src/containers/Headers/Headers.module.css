@@ -1,0 +1,27 @@
+.conteiner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    margin-left: auto;
+}
+
+.button {
+    width: 124px;
+}
+
+.wrapper {
+    margin-left: auto;
+    display: flex;
+    gap: 8px;
+}
+.button_login {
+    color: black;
+}
+
+.button {
+    background-color: #FFA000;
+    color: white;
+}

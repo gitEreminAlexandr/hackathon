@@ -1,0 +1,25 @@
+.conteiner {
+    margin: auto;
+    padding-top: 174px;
+}
+
+.button {
+    color: #4CAF50;
+}
+
+.wrapper { 
+    padding-top: 30px;
+}
+
+.footer {
+    padding-left: 140px;
+    padding-top: 12px;
+}
+
+.steps {
+    width: 40px;
+}
+
+.pointer {
+    cursor: pointer;
+}

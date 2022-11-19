@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Layout } from 'antd';
 
 import { Headers } from './containers';
-import { WelcomPage } from './pages';
+import { WelcomPage, ChartExample } from './pages';
 
 import './App.css';
 
@@ -22,6 +22,7 @@ export const Router = () => {
 				<Layout style={{ backgroundColor: 'white', paddingTop: '38px' }}>
 					<Routes>
 						<Route path="/" element={<WelcomPage />} />
+						<Route path="/example" element={<ChartExample />} />
 					</Routes>
 				</Layout>
 			</Layout>
